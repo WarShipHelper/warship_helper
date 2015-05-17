@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/qinbi/libs/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-f192d44977c4ebc8f5beb600e12a59349b13d5ca.jar" />
+    </item>
+    <item
+        jar="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/libs/disklrucache-2.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="93b399470e72c0bc8cb52379943b63c9aa586cd8">
+        <dex dex="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/pre-dexed/debug/disklrucache-2.0.2-d7c80f0aff7824d77ddd712c0eb0d801dee166cc.jar" />
+    </item>
+    <item
+        jar="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-1f2e1762df848e8a20abc4dd93a538e8ac4dc953.jar" />
+    </item>
+    <item
+        jar="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/pre-dexed/debug/classes-d09246d76d946a4c524df27bfda9ffcff089e551.jar" />
+    </item>
+    <item
+        jar="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/qinbi/Workspace/qinbi/warship_helper_or/code/app/build/intermediates/pre-dexed/debug/classes-a480ad456d5242a4635d0b66f0def53124088f73.jar" />
+    </item>
+
+</items>
