@@ -1,5 +1,9 @@
 package com.warship.helper.ui.fragment;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,10 +19,8 @@ import android.widget.TextView;
 import com.warship.helper.R;
 import com.warship.helper.app.WshApp;
 import com.warship.helper.manager.navigation.NavigationManager;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import com.warship.helper.manager.navigation.NavigationParams;
+import com.warship.helper.util.Const;
 
 /**
  * @author qinbi@wandoujia.com (Bi Qin)
@@ -29,7 +31,7 @@ public class LevelFragment extends BaseWshFragment {
       , R.array.level3_arrs, R.array.level4_arrs, R.array.level5_arrs, R.array.level6_arrs};
   public static final int[] LEVEL_CHAPTER_IMG_IDS = {R.drawable.ic_chapter1,
       R.drawable.ic_chapter2, R.drawable.ic_chapter3, R.drawable.ic_chapter4,
-      R.drawable.ic_chapter5, R.drawable.ic_chapter5};
+      R.drawable.ic_chapter5, R.drawable.ic_chapter6};
 
   @Nullable
   @Override
@@ -136,7 +138,7 @@ public class LevelFragment extends BaseWshFragment {
         if (chapterTitles.size() > section) {
           holder.levelText2.setText(chapterTitles.get(section));
           holder.levelText2.setVisibility(View.VISIBLE);
-          holder.levelText1.setOnClickListener(new LevelTextClickListener(parent.getContext(),
+          holder.levelText2.setOnClickListener(new LevelTextClickListener(parent.getContext(),
               chapter, section));
         } else {
           holder.levelText2.setVisibility(View.INVISIBLE);
@@ -183,8 +185,11 @@ public class LevelFragment extends BaseWshFragment {
 
     @Override
     public void onClick(View v) {
-      // TODO open this
-      // NavigationManager.navigateTo(context, NavigationManager.PageName.LEVEL_DETAIL, null);
+      Bundle bundle = new Bundle();
+      bundle.putInt(Const.Param.KEY_LEVEL_CHAPTER, chapter);
+      bundle.putInt(Const.Param.KEY_LEVEL_SECTION, section);
+      NavigationParams params = NavigationParams.newBuilder().setExtra(bundle).build();
+      NavigationManager.navigateTo(context, NavigationManager.PageName.LEVEL_DETAIL, params);
     }
   }
 }

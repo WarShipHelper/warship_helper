@@ -14,6 +14,7 @@ import com.warship.helper.BuildConfig;
 import com.warship.helper.app.WshApp;
 import com.warship.helper.ui.fragment.BaseWshFragment;
 import com.warship.helper.ui.fragment.HomeFragment;
+import com.warship.helper.ui.fragment.LevelDetailFragment;
 import com.warship.helper.ui.fragment.LevelFragment;
 import com.warship.helper.util.CollectionUtils;
 import com.warship.helper.util.Const;
@@ -159,6 +160,9 @@ public class NavigationManager {
         break;
       case LEVEL:
         fragment = new LevelFragment();
+        break;
+      case LEVEL_DETAIL:
+        fragment = new LevelDetailFragment();
         break;
       default:
     }

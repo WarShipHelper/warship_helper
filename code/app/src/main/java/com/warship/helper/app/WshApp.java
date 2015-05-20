@@ -5,6 +5,10 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.warship.helper.util.Const;
+
 /**
  * @author qinbi@wandoujia.com (Bi Qin)
  */
@@ -17,6 +21,8 @@ public class WshApp extends Application {
   @Override
   public void onCreate() {
     context = this;
+    ImageLoaderConfiguration config = ImageLoaderConfiguration.createDefault(this);
+    ImageLoader.getInstance().init(config);
     super.onCreate();
   }
 
